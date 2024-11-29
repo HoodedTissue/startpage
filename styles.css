@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "New York";
+    src: url("font/NewYork.ttf");
+}
+@font-face {
+    font-family: "SF Pro Rounded";
+    src: url("font/SF-Pro-Rounded-Regular.otf");
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("font/DMSans-Regular.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+
+:root {
+    --dark-bg-color: #161719;
+    --light-bg-color: #1e1e21;
+    --foreground-color: #ccd0d9;
+    --light-font: #EBF0FF;
+
+}
+
+* {
+    font-family: "DM Sans", "Source Han sans JP";
+    color: var(--foreground-color);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: var(--light-bg-color);
+}
+
+a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8ab4f8;
+}
+
+#date {
+    font-family: "SF Pro Rounded";
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--foreground-color);
+    margin: 0;
+}
+#clock {
+    font-family: "New York";
+    font-weight: bold;
+    font-size: 8.5em;
+    color: var(--light-font);
+    margin: 0;
+}
+
+.side-img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.temp {
+    grid-column: 1 / 4;
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2em;
+}
+.container {
+    display: grid;
+    grid-template-rows: 0, auto;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.inner {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    width: 50%;
+    height: 60%;
+    padding: 0;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    
+    background-color: var(--dark-bg-color);
+    border-radius: 25px;
+    border: 10px solid;
+    border-color: var(--dark-bg-color);
+}
+.onkeo {
+    height: 32px;
+    width: 32px;
+}
+.welcome {
+    font-family: Iosevka;
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 1.5em;
+    width: 48%;
+    height: 60%;
+    text-align: left;
+    /*padding-bottom: 2em;  /* for 22.gif*/ 
+    padding-bottom: 3.3em; /* for 26.gif*/
+    
+}
+
+.time {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.image {
+    grid-column: 1;
+    grid-row: 1 / 5;
+
+    display: grid;
+    place-items: center;
+}
+
+.links {
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+    padding-top: 7em;
+    padding-left: 8em;
+
+}
+
+/* grid box hell :sob: */
+.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+.two {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.four {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.five {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.six {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.seven {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.eight {
+    grid-column: 2;
+    grid-row: 4;
+}
